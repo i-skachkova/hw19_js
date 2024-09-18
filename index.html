@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <button class="button" open-modal>Відкрити модалку</button>
+        <div class="backdrop js-backdrop hide-modal">
+            <div class="modal">
+                <h2>Modal window</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque delectus est incidunt voluptates eaque debitis dicta voluptatum necessitatibus voluptate velit blanditiis, sunt eum veniam, eveniet obcaecati voluptatem enim odio minus dignissimos nam. Esse odio voluptates a at, nostrum necessitatibus corrupti, hic similique minus, impedit excepturi ea accusantium ab exercitationem adipisci.
+                </p>
+                <button class="button" type="button" close-modal>Закрити</button>
+            </div>
+        </div>
+
+        <form>
+            <p>Choose a color:</p>
+            <label>
+                <input type="radio" name="color" value="violet">
+                Violet
+            </label>
+            <label>
+                <input type="radio" name="color" value="white" checked>
+                White
+            </label>
+            <label>
+                <input type="radio" name="color" value="lightblue">
+                Lightblue
+            </label>
+        </form>
+
+        <input type="text" id="name-input" placeholder="You`r name?">
+        <h1>Hi, <span id="name-output">stranger</span>!</h1>
+        <input type="text" id="validation-input" data-length="6" placeholder="Введіть 6 символів">
+        <input type="range" id="font-size-control" min="10" max="100">
+        <br />
+        <span id="text">Абракадабра!</span>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
